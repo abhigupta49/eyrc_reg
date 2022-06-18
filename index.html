@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script tag-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+        <form class="well form-horizontal" action="connect.php" method="post" id="contact_form">
+          <fieldset>
+      
+            <!-- Form Name -->
+            <legend>Contact Us Today!</legend>
+      
+            <!-- Text input-->
+      
+            <div class="form-group">
+              <label class="col-md-4 control-label">First Name</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="firstName" placeholder="First Name" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+      
+            <!-- Text input-->
+      
+            <div class="form-group">
+              <label class="col-md-4 control-label">Last Name</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="lastName" placeholder="Last Name" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+
+            <!-- Text input-->
+      
+            <div class="form-group">
+                <label class="col-md-4 control-label">Phone #</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="phone" placeholder="+918804675461" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+      
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">E-Mail</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input name="email" placeholder="E-Mail Address" class="form-control" type="text" >
+                </div>
+              </div>
+            </div>
+      
+            <!-- radio checks -->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Gender</label>
+                <div class="col-md-4">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="gender" value="male" /> Male
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="gender" value="female" /> Female
+                    </label>
+                  </div>
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="gender" value="other" /> Other
+                      </label>
+                    </div>
+                </div>
+              </div>
+              
+            <!-- Select Basic -->
+      
+            <div class="form-group">
+                <label class="col-md-4 control-label">Year</label>
+                <div class="col-md-4 selectContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="year" class="form-control selectpicker" id="year">
+                      <option value="">Select Year</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Select Basic -->
+      
+            <div class="form-group">
+                <label class="col-md-4 control-label">Country</label>
+                <div class="col-md-4 selectContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="country" class="form-control selectpicker" id="country">
+                      <option>Select Country</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+      
+            <div class="form-group">
+                <label class="col-md-4 control-label">College List</label>
+                <div class="col-md-4 selectContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="college" class="form-control selectpicker" id="collegeList">
+                      <option>Select College</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+      
+            <div class="form-group">
+                <label class="col-md-4 control-label">Domain/Department</label>
+                <div class="col-md-4 selectContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="domain" class="form-control selectpicker" id="domain">
+                        <option value="">Select Department</option>
+                      <option value="cse">Computer Science</option>
+                      <option value="procurement">Procurement Manager</option>
+                      <option value="Plant/Facility">Plant/Facility Manager</option>
+                      <option value="scm">Supply Chain Manager</option>
+                      <option value="Project">Project Manager</option>
+                      <option value="hr">Human Resources</option>
+                      <option value="om">Operations Management</option>
+                      <option value="finance">Finance</option>
+                      <option value="marketing">Marketing</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+      
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+      
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label"></label>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
+              </div>
+            </div>
+      
+          </fieldset>
+        </form>
+      </div>
+      </div><!-- /.container -->
+
+      <script src="js/app.js"></script>  
+</body>
+</html>
